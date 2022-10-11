@@ -1,4 +1,4 @@
-FROM nginx-php-clean
+FROM achalukov/nginx-php-clean
 COPY web/ /var/www/html
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 CMD ["/usr/bin/supervisord"]
